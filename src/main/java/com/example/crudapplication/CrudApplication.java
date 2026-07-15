@@ -3,7 +3,7 @@ package com.example.crudapplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplicationS
+@SpringBootApplication
 public class CrudApplication {
 
     public static void main(String[] args) {

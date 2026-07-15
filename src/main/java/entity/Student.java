@@ -1,4 +1,4 @@
-package com.example.crudapplication.entity;
+package com.example.crudapplicationS.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,17 +13,19 @@ public class Student {
     private Long id;
 
     private String name;
+    private String rollNo;
     private String email;
-    private String course;
+    private String department;
 
     public Student() {
     }
 
-    public Student(Long id, String name, String email, String course) {
+    public Student(Long id, String name, String rollNo, String email, String department) {
         this.id = id;
         this.name = name;
+        this.rollNo = rollNo;
         this.email = email;
-        this.course = course;
+        this.department = department;
     }
 
     public Long getId() {
@@ -42,6 +44,14 @@ public class Student {
         this.name = name;
     }
 
+    public String getRollNo() {
+        return rollNo;
+    }
+
+    public void setRollNo(String rollNo) {
+        this.rollNo = rollNo;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -50,11 +60,11 @@ public class Student {
         this.email = email;
     }
 
-    public String getCourse() {
-        return course;
+    public String getDepartment() {
+        return department;
     }
 
-    public void setCourse(String course) {
-        this.course = course;
+    public void setDepartment(String department) {
+        this.department = department;
     }
 }
